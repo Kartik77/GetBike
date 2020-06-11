@@ -1,0 +1,122 @@
+
+
+/* component */
+.page-title {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.brand {
+  background: #3e454c;
+  position: relative;
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.brand .logo {
+  box-sizing: border-box;
+  padding: 20px;
+  float: left;
+  display: block;
+  width: 200px;
+}
+
+}
+.brand .logo img {
+  height: 20px;
+}
+.brand .menu-btn {
+  float: right;
+  background: #232d3b;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  padding: 20px 20px;
+}
+@media only screen and (min-width: 992px) {
+  .brand .menu-btn {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .brand .ts-profile-nav {
+    display: block;
+  }
+}
+
+.ts-sidebar {
+  background: #2c3136;
+  max-height: 0;
+  transition: max-height 0.3s;
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  bottom: 0;
+  top: 60px;
+  overflow-y: auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .ts-sidebar .ts-profile-nav {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .ts-sidebar {
+    max-height: 100%;
+    bottom: 0;
+  }
+}
+.ts-sidebar-menu .ts-label {
+  color: #585c64;
+  font-weight: bold;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+.ts-sidebar-menu a {
+  display: block;
+  text-decoration: none;
+  padding: 12px 15px;
+  color: #fff;
+}
+.ts-sidebar-menu li {
+  position: relative;
+}
+.ts-sidebar-menu li i {
+  color: #585c64;
+  margin-right: 10px;
+}
+.ts-sidebar-menu li ul {
+  display: block;
+  background: rgba(255, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.32);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.ts-main-content .content-wrapper {
+  padding-top: 15px;
+  margin-top: 60px;
+}
+@media only screen and (min-width: 992px) {
+  .ts-main-content .ts-sidebar {
+    width: 250px;
+    float: left;
+  }
+  .ts-main-content .content-wrapper {
+    margin-left: 250px;
+  }
+}
+.login-page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
